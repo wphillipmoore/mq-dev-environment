@@ -1,0 +1,37 @@
+name: Setup MQ Dev Environment
+description: >-
+  Start IBM MQ containers (QM1 + QM2), seed shared test objects,
+  and verify the environment is ready.
+
+inputs:
+  verify:
+    description: Run mq_verify.sh after seeding
+    required: false
+    default: 'true'
+
+outputs:
+  qm1-rest-url:
+    description: QM1 REST API base URL
+    value: https://localhost:9443/ibmmq/rest/v2
+  qm2-rest-url:
+    description: QM2 REST API base URL
+    value: https://localhost:9444/ibmmq/rest/v2
+
+runs:
+  using: composite
+  steps:
+    - name: Start MQ containers
+      shell: bash
+      working-directory: ${{ github.action_path }}/../../..
+      run: scripts/mq_start.sh
+
+    - name: Seed MQ objects
+      shell: bash
+      working-directory: ${{ github.action_path }}/../../..
+      run: scripts/mq_seed.sh
+
+    - name: Verify MQ environment
+      if: inputs.verify == 'true'
+      shell: bash
+      working-directory: ${{ github.action_path }}/../../..
+      run: scripts/mq_verify.sh
