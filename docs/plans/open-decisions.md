@@ -42,12 +42,13 @@ Track decisions for the shared MQ test environment repository.
 
 - **Local development**: Sibling directory `../mq-dev-environment` (decided
   2026-02-13, see `docs/plans/2026-02-13-repository-design.md`).
-- **CI**: TBD -- reusable workflow vs. composite action (composite action
-  likely preferred).
+- **CI**: Composite action in this repo at
+  `.github/actions/setup-mq/action.yml` (decided 2026-02-13).
 
 ## CI integration
 
-- **Workflow type**: TBD (reusable workflow vs. composite action).
+- **Workflow type**: Composite action at
+  `.github/actions/setup-mq/action.yml` (decided 2026-02-13).
 - **Container image caching**: TBD.
 - **pymqrest migration**: TBD (update pymqrest to consume from this repo).
 - **mq-rest-admin integration**: TBD (add integration test support).
