@@ -26,9 +26,9 @@
 ## Repository profile
 
 - repository_type: infrastructure
-- versioning_scheme: none (not published as a package)
+- versioning_scheme: semver
 - branching_model: library-release
-- release_model: none (consumed via git reference)
+- release_model: tagged-release
 - supported_release_lines: current only
 - primary_language: shell
 
