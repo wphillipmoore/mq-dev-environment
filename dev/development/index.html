@@ -847,10 +847,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#starting-the-environment-from-a-consuming-repo" class="md-nav__link">
+  <a href="#starting-the-environment-from-a-language-library" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Starting the environment from a consuming repo
+        Starting the environment from a language library
       
     </span>
   </a>
@@ -936,10 +936,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#starting-the-environment-from-a-consuming-repo" class="md-nav__link">
+  <a href="#starting-the-environment-from-a-language-library" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Starting the environment from a consuming repo
+        Starting the environment from a language library
       
     </span>
   </a>
@@ -998,14 +998,16 @@
 
 <h1 id="development">Development<a class="headerlink" href="#development" title="Permanent link">&para;</a></h1>
 <h2 id="local-directory-structure">Local directory structure<a class="headerlink" href="#local-directory-structure" title="Permanent link">&para;</a></h2>
-<p>Consuming repositories reference this repo as a sibling directory:</p>
+<p>The language-specific libraries reference this repo as a sibling
+directory:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>~/dev/
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  mq-rest-admin-dev-environment/     # this repo
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>  pymqrest/                          # consuming repo
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>  mq-rest-admin/                     # consuming repo
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>  mq-rest-admin-python/              # language library
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>  mq-rest-admin-java/                # language library
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>  mq-rest-admin-go/                  # language library
 </code></pre></div>
-<h2 id="starting-the-environment-from-a-consuming-repo">Starting the environment from a consuming repo<a class="headerlink" href="#starting-the-environment-from-a-consuming-repo" title="Permanent link">&para;</a></h2>
-<p>From a consuming repository, start the environment using relative
+<h2 id="starting-the-environment-from-a-language-library">Starting the environment from a language library<a class="headerlink" href="#starting-the-environment-from-a-language-library" title="Permanent link">&para;</a></h2>
+<p>From a language library repo, start the environment using relative
 paths:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>../mq-rest-admin-dev-environment/scripts/mq_start.sh
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>../mq-rest-admin-dev-environment/scripts/mq_seed.sh

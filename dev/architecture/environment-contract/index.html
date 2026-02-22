@@ -759,10 +759,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#consuming-repositories" class="md-nav__link">
+  <a href="#language-libraries" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Consuming repositories
+        Language libraries
       
     </span>
   </a>
@@ -954,10 +954,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#consuming-repositories" class="md-nav__link">
+  <a href="#language-libraries" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Consuming repositories
+        Language libraries
       
     </span>
   </a>
@@ -982,9 +982,9 @@
 
 
 <h1 id="environment-contract">Environment Contract<a class="headerlink" href="#environment-contract" title="Permanent link">&para;</a></h1>
-<p>Consuming repositories depend on these stable details. Changes to
-any of these values are breaking changes and require coordination
-with all consuming repos.</p>
+<p>The language-specific libraries depend on these stable details.
+Changes to any of these values are breaking changes and require
+coordination with all language libraries.</p>
 <h2 id="connection-details">Connection details<a class="headerlink" href="#connection-details" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -1063,13 +1063,15 @@ object listing.</p>
 </tbody>
 </table>
 <p>See <a href="../../ci-integration/">CI Integration</a> for usage details.</p>
-<h2 id="consuming-repositories">Consuming repositories<a class="headerlink" href="#consuming-repositories" title="Permanent link">&para;</a></h2>
+<h2 id="language-libraries">Language libraries<a class="headerlink" href="#language-libraries" title="Permanent link">&para;</a></h2>
+<p>This environment is used by the language-specific libraries in the
+mq-rest-admin project:</p>
 <ul>
-<li><a href="https://github.com/wphillipmoore/pymqrest">pymqrest</a> — Python
-  wrapper for the MQ administrative REST API</li>
-<li><a href="https://github.com/wphillipmoore/mq-rest-admin">mq-rest-admin</a> —
-  Java port of pymqrest</li>
-<li>pymqpcf — Python wrapper for the MQ PCF API (planned)</li>
+<li><a href="https://github.com/wphillipmoore/mq-rest-admin-python">mq-rest-admin-python</a></li>
+<li><a href="https://github.com/wphillipmoore/mq-rest-admin-java">mq-rest-admin-java</a></li>
+<li><a href="https://github.com/wphillipmoore/mq-rest-admin-go">mq-rest-admin-go</a></li>
+<li><a href="https://github.com/wphillipmoore/mq-rest-admin-ruby">mq-rest-admin-ruby</a></li>
+<li><a href="https://github.com/wphillipmoore/mq-rest-admin-rust">mq-rest-admin-rust</a></li>
 </ul>
 
 
