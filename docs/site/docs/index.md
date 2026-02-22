@@ -5,13 +5,16 @@ repositories. Provides container lifecycle scripts, seed data, and
 a reusable GitHub Actions composite action for integration testing
 against a real MQ queue manager.
 
-## Consuming repositories
+## Language libraries
 
-- [pymqrest](https://github.com/wphillipmoore/pymqrest) — Python
-  wrapper for the MQ administrative REST API
-- [mq-rest-admin](https://github.com/wphillipmoore/mq-rest-admin) —
-  Java port of pymqrest
-- pymqpcf — Python wrapper for the MQ PCF API (planned)
+This environment is used by the language-specific libraries in the
+mq-rest-admin project:
+
+- [mq-rest-admin-python](https://github.com/wphillipmoore/mq-rest-admin-python)
+- [mq-rest-admin-java](https://github.com/wphillipmoore/mq-rest-admin-java)
+- [mq-rest-admin-go](https://github.com/wphillipmoore/mq-rest-admin-go)
+- [mq-rest-admin-ruby](https://github.com/wphillipmoore/mq-rest-admin-ruby)
+- [mq-rest-admin-rust](https://github.com/wphillipmoore/mq-rest-admin-rust)
 
 ## What this repo provides
 
