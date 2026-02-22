@@ -1,8 +1,8 @@
 # Environment Contract
 
-Consuming repositories depend on these stable details. Changes to
-any of these values are breaking changes and require coordination
-with all consuming repos.
+The language-specific libraries depend on these stable details.
+Changes to any of these values are breaking changes and require
+coordination with all language libraries.
 
 ## Connection details
 
@@ -39,10 +39,13 @@ The composite action exposes REST API base URLs as step outputs:
 
 See [CI Integration](../ci-integration.md) for usage details.
 
-## Consuming repositories
+## Language libraries
 
-- [pymqrest](https://github.com/wphillipmoore/pymqrest) — Python
-  wrapper for the MQ administrative REST API
-- [mq-rest-admin](https://github.com/wphillipmoore/mq-rest-admin) —
-  Java port of pymqrest
-- pymqpcf — Python wrapper for the MQ PCF API (planned)
+This environment is used by the language-specific libraries in the
+mq-rest-admin project:
+
+- [mq-rest-admin-python](https://github.com/wphillipmoore/mq-rest-admin-python)
+- [mq-rest-admin-java](https://github.com/wphillipmoore/mq-rest-admin-java)
+- [mq-rest-admin-go](https://github.com/wphillipmoore/mq-rest-admin-go)
+- [mq-rest-admin-ruby](https://github.com/wphillipmoore/mq-rest-admin-ruby)
+- [mq-rest-admin-rust](https://github.com/wphillipmoore/mq-rest-admin-rust)

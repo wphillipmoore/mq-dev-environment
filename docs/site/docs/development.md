@@ -2,18 +2,20 @@
 
 ## Local directory structure
 
-Consuming repositories reference this repo as a sibling directory:
+The language-specific libraries reference this repo as a sibling
+directory:
 
 ```text
 ~/dev/
   mq-rest-admin-dev-environment/     # this repo
-  pymqrest/                          # consuming repo
-  mq-rest-admin/                     # consuming repo
+  mq-rest-admin-python/              # language library
+  mq-rest-admin-java/                # language library
+  mq-rest-admin-go/                  # language library
 ```
 
-## Starting the environment from a consuming repo
+## Starting the environment from a language library
 
-From a consuming repository, start the environment using relative
+From a language library repo, start the environment using relative
 paths:
 
 ```bash
