@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://wphillipmoore.github.io/mq-rest-admin-dev-environment/dev/development/">
       
       
-        <link rel="prev" href="../lifecycle-scripts/">
+        <link rel="prev" href="../reference/environment-variables/">
       
       
       
@@ -304,6 +304,26 @@
   
   
   
+    
+    
+      <li class="md-tabs__item">
+        <a href="../setup/new-repo/" class="md-tabs__link">
+          
+  
+  
+  Setup
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
     <li class="md-tabs__item">
       <a href="../ci-integration/" class="md-tabs__link">
         
@@ -334,6 +354,26 @@
 
       </a>
     </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../reference/port-allocation/" class="md-tabs__link">
+          
+  
+  
+  Reference
+
+        </a>
+      </li>
+    
   
 
       
@@ -721,6 +761,93 @@
   
   
   
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Setup
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Setup
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup/new-repo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    New Repository Onboarding
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
     <li class="md-nav__item">
       <a href="../ci-integration/" class="md-nav__link">
         
@@ -765,6 +892,121 @@
   
 
       </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Reference
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/port-allocation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Port Allocation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/environment-variables/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Environment Variables
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -1036,47 +1278,9 @@ queue manager state across restarts.</p>
 <li>Update the seed data documentation</li>
 </ol>
 <h2 id="environment-variables">Environment variables<a class="headerlink" href="#environment-variables" title="Permanent link">&para;</a></h2>
-<p>The Docker Compose configuration supports port overrides via
-environment variables:</p>
-<table>
-<thead>
-<tr>
-<th>Variable</th>
-<th>Default</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>MQ_IMAGE</code></td>
-<td><code>icr.io/ibm-messaging/mq:latest</code></td>
-<td>Container image</td>
-</tr>
-<tr>
-<td><code>QM1_MQ_PORT</code></td>
-<td><code>1414</code></td>
-<td>Host port for QM1 MQ listener</td>
-</tr>
-<tr>
-<td><code>QM1_REST_PORT</code></td>
-<td><code>9443</code></td>
-<td>Host port for QM1 REST API</td>
-</tr>
-<tr>
-<td><code>QM2_MQ_PORT</code></td>
-<td><code>1415</code></td>
-<td>Host port for QM2 MQ listener</td>
-</tr>
-<tr>
-<td><code>QM2_REST_PORT</code></td>
-<td><code>9444</code></td>
-<td>Host port for QM2 REST API</td>
-</tr>
-</tbody>
-</table>
-<p>Set these before running <code>mq_start.sh</code> to use non-default ports:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nv">QM1_REST_PORT</span><span class="o">=</span><span class="m">19443</span><span class="w"> </span><span class="nv">QM2_REST_PORT</span><span class="o">=</span><span class="m">19444</span><span class="w"> </span>scripts/mq_start.sh
-</code></pre></div>
+<p>See the <a href="../reference/environment-variables/">Environment Variables</a>
+reference for the complete list of Docker Compose, script, consumer,
+and test gate variables.</p>
 
 
 

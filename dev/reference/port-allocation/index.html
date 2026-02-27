@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://wphillipmoore.github.io/mq-rest-admin-dev-environment/dev/configuration/docker-compose/">
+        <link rel="canonical" href="https://wphillipmoore.github.io/mq-rest-admin-dev-environment/dev/reference/port-allocation/">
       
       
-        <link rel="prev" href="../../getting-started/">
+        <link rel="prev" href="../../lifecycle-scripts/">
       
       
-        <link rel="next" href="../seed-data/">
+        <link rel="next" href="../environment-variables/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Docker Compose - mq-rest-admin-dev-environment</title>
+        <title>Port Allocation - mq-rest-admin-dev-environment</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#docker-compose" class="md-skip">
+        <a href="#port-allocation" class="md-skip">
           Skip to content
         </a>
       
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Docker Compose
+              Port Allocation
             
           </span>
         </div>
@@ -265,13 +265,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../configuration/docker-compose/" class="md-tabs__link">
           
   
   
@@ -365,11 +363,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../reference/port-allocation/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   
@@ -503,31 +503,26 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   
@@ -545,7 +540,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -560,37 +555,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Docker Compose
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../configuration/docker-compose/" class="md-nav__link">
         
   
   
@@ -606,109 +574,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#services" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Services
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Services">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#qm1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        QM1
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#qm2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        QM2
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#environment-variables" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Environment variables
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#volumes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Volumes
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#health-checks" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Health checks
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#network" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Network
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -721,7 +586,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../seed-data/" class="md-nav__link">
+      <a href="../../configuration/seed-data/" class="md-nav__link">
         
   
   
@@ -749,7 +614,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../rest-api-users/" class="md-nav__link">
+      <a href="../../configuration/rest-api-users/" class="md-nav__link">
         
   
   
@@ -1037,26 +902,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
         
           
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
             
   
   
@@ -1074,7 +944,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1089,10 +959,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../reference/port-allocation/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Port Allocation
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1108,6 +1005,87 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#local-defaults" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Local defaults
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#per-language-allocation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Per-language allocation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ci-port-isolation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CI port isolation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CI port isolation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-python-ci-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example: Python CI matrix
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-a-new-language" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adding a new language
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1120,7 +1098,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/environment-variables/" class="md-nav__link">
+      <a href="../environment-variables/" class="md-nav__link">
         
   
   
@@ -1202,33 +1180,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#services" class="md-nav__link">
+  <a href="#local-defaults" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Services
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Services">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#qm1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        QM1
+        Local defaults
       
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#qm2" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#per-language-allocation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        QM2
+        Per-language allocation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ci-port-isolation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CI port isolation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CI port isolation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-python-ci-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example: Python CI matrix
       
     </span>
   </a>
@@ -1241,43 +1230,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#environment-variables" class="md-nav__link">
+  <a href="#adding-a-new-language" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Environment variables
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#volumes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Volumes
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#health-checks" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Health checks
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#network" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Network
+        Adding a new language
       
     </span>
   </a>
@@ -1301,133 +1257,165 @@
 
 
 
-<h1 id="docker-compose">Docker Compose<a class="headerlink" href="#docker-compose" title="Permanent link">&para;</a></h1>
-<p>The Docker Compose configuration is located at <code>config/docker-compose.yml</code>
-and defines two IBM MQ container services with REST API access.</p>
-<h2 id="services">Services<a class="headerlink" href="#services" title="Permanent link">&para;</a></h2>
-<h3 id="qm1">QM1<a class="headerlink" href="#qm1" title="Permanent link">&para;</a></h3>
+<h1 id="port-allocation">Port Allocation<a class="headerlink" href="#port-allocation" title="Permanent link">&para;</a></h1>
+<p>Each language library in the mq-rest-admin project is assigned a
+dedicated block of ports to prevent conflicts when multiple environments
+run concurrently — both locally and in CI matrix builds.</p>
+<h2 id="local-defaults">Local defaults<a class="headerlink" href="#local-defaults" title="Permanent link">&para;</a></h2>
+<p>The dev environment exposes four host ports per instance:</p>
 <table>
 <thead>
 <tr>
-<th>Property</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Image</td>
-<td><code>icr.io/ibm-messaging/mq:latest</code></td>
-</tr>
-<tr>
-<td>Hostname</td>
-<td><code>qm1</code></td>
-</tr>
-<tr>
-<td>MQ listener port</td>
-<td><code>1414</code> (host: <code>1414</code>)</td>
-</tr>
-<tr>
-<td>REST API port</td>
-<td><code>9443</code> (host: <code>9443</code>)</td>
-</tr>
-<tr>
-<td>Queue manager name</td>
-<td><code>QM1</code></td>
-</tr>
-</tbody>
-</table>
-<h3 id="qm2">QM2<a class="headerlink" href="#qm2" title="Permanent link">&para;</a></h3>
-<table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Image</td>
-<td><code>icr.io/ibm-messaging/mq:latest</code></td>
-</tr>
-<tr>
-<td>Hostname</td>
-<td><code>qm2</code></td>
-</tr>
-<tr>
-<td>MQ listener port</td>
-<td><code>1414</code> (host: <code>1415</code>)</td>
-</tr>
-<tr>
-<td>REST API port</td>
-<td><code>9443</code> (host: <code>9444</code>)</td>
-</tr>
-<tr>
-<td>Queue manager name</td>
-<td><code>QM2</code></td>
-</tr>
-</tbody>
-</table>
-<h2 id="environment-variables">Environment variables<a class="headerlink" href="#environment-variables" title="Permanent link">&para;</a></h2>
-<p>Both services accept the same environment variables for port
-overrides:</p>
-<table>
-<thead>
-<tr>
-<th>Variable</th>
+<th>Port</th>
 <th>Default</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>MQ_IMAGE</code></td>
-<td><code>icr.io/ibm-messaging/mq:latest</code></td>
-<td>Container image</td>
-</tr>
-<tr>
-<td><code>QM1_MQ_PORT</code></td>
+<td>QM1 MQ listener</td>
 <td><code>1414</code></td>
-<td>Host port for QM1 MQ listener</td>
+<td>AMQP/MQI connections to QM1</td>
 </tr>
 <tr>
-<td><code>QM1_REST_PORT</code></td>
+<td>QM1 REST API</td>
 <td><code>9443</code></td>
-<td>Host port for QM1 REST API</td>
+<td>HTTPS REST API for QM1</td>
 </tr>
 <tr>
-<td><code>QM2_MQ_PORT</code></td>
+<td>QM2 MQ listener</td>
 <td><code>1415</code></td>
-<td>Host port for QM2 MQ listener</td>
+<td>AMQP/MQI connections to QM2</td>
 </tr>
 <tr>
-<td><code>QM2_REST_PORT</code></td>
+<td>QM2 REST API</td>
 <td><code>9444</code></td>
-<td>Host port for QM2 REST API</td>
+<td>HTTPS REST API for QM2</td>
 </tr>
 </tbody>
 </table>
-<h2 id="volumes">Volumes<a class="headerlink" href="#volumes" title="Permanent link">&para;</a></h2>
-<p>Each queue manager has a dedicated named volume for persistent data:</p>
-<ul>
-<li><code>qm1data</code> — mounted at <code>/var/mqm</code> in the QM1 container</li>
-<li><code>qm2data</code> — mounted at <code>/var/mqm</code> in the QM2 container</li>
-</ul>
-<p>The <code>mqwebuser.xml</code> configuration file is bind-mounted read-only
-into both containers at the Liberty web server configuration path.</p>
-<h2 id="health-checks">Health checks<a class="headerlink" href="#health-checks" title="Permanent link">&para;</a></h2>
-<p>Both containers use the <code>dspmq</code> command as a health check:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">healthcheck</span><span class="p">:</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">test</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;CMD&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;dspmq&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;-m&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;QM1&quot;</span><span class="p p-Indicator">]</span><span class="w">  </span><span class="c1"># or QM2</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nt">interval</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10s</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nt">timeout</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5s</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span><span class="nt">retries</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">12</span>
+<p>These defaults are used when running the environment directly from this
+repository without port overrides.</p>
+<h2 id="per-language-allocation">Per-language allocation<a class="headerlink" href="#per-language-allocation" title="Permanent link">&para;</a></h2>
+<p>Each language library is assigned a block of 10 ports. The first four
+ports in each block are used for the base allocation; the remaining
+ports accommodate CI matrix offsets.</p>
+<table>
+<thead>
+<tr>
+<th>Language</th>
+<th>QM1 MQ</th>
+<th>QM1 REST</th>
+<th>QM2 MQ</th>
+<th>QM2 REST</th>
+<th>Block</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Python</td>
+<td>11414</td>
+<td>19443</td>
+<td>11415</td>
+<td>19444</td>
+<td>11414–11423 / 19443–19452</td>
+</tr>
+<tr>
+<td>Java</td>
+<td>11424</td>
+<td>19453</td>
+<td>11425</td>
+<td>19454</td>
+<td>11424–11433 / 19453–19462</td>
+</tr>
+<tr>
+<td>Go</td>
+<td>11434</td>
+<td>19463</td>
+<td>11435</td>
+<td>19464</td>
+<td>11434–11443 / 19463–19472</td>
+</tr>
+<tr>
+<td>Ruby</td>
+<td>11444</td>
+<td>19473</td>
+<td>11445</td>
+<td>19474</td>
+<td>11444–11453 / 19473–19482</td>
+</tr>
+<tr>
+<td>Rust</td>
+<td>11454</td>
+<td>19483</td>
+<td>11455</td>
+<td>19484</td>
+<td>11454–11463 / 19483–19492</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ci-port-isolation">CI port isolation<a class="headerlink" href="#ci-port-isolation" title="Permanent link">&para;</a></h2>
+<p>In CI matrix builds, each matrix entry needs its own set of ports to
+avoid conflicts. Apply an offset of <strong>+2</strong> per matrix index to the MQ
+ports and <strong>+2</strong> per matrix index to the REST ports:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>qm1-mq-port   = base_mq   + (matrix_index * 2)
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>qm2-mq-port   = base_mq   + (matrix_index * 2) + 1
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>qm1-rest-port  = base_rest + (matrix_index * 2)
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>qm2-rest-port  = base_rest + (matrix_index * 2) + 1
 </code></pre></div>
-<p>The <code>mq_start.sh</code> script waits for both containers to report
-healthy before returning.</p>
-<h2 id="network">Network<a class="headerlink" href="#network" title="Permanent link">&para;</a></h2>
-<p>Both services share the <code>mq-dev-net</code> Docker network, which allows
-the containers to communicate using their hostnames (<code>qm1</code>, <code>qm2</code>).
-This is required for the cross-QM sender/receiver channels.</p>
+<h3 id="example-python-ci-matrix">Example: Python CI matrix<a class="headerlink" href="#example-python-ci-matrix" title="Permanent link">&para;</a></h3>
+<p>Python's base ports are MQ <code>11414</code> and REST <code>19443</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Matrix index</th>
+<th>QM1 MQ</th>
+<th>QM2 MQ</th>
+<th>QM1 REST</th>
+<th>QM2 REST</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>11414</td>
+<td>11415</td>
+<td>19443</td>
+<td>19444</td>
+</tr>
+<tr>
+<td>1</td>
+<td>11416</td>
+<td>11417</td>
+<td>19445</td>
+<td>19446</td>
+</tr>
+<tr>
+<td>2</td>
+<td>11418</td>
+<td>11419</td>
+<td>19447</td>
+<td>19448</td>
+</tr>
+<tr>
+<td>3</td>
+<td>11420</td>
+<td>11421</td>
+<td>19449</td>
+<td>19450</td>
+</tr>
+</tbody>
+</table>
+<p>Each 10-port block supports up to 5 matrix entries.</p>
+<h2 id="adding-a-new-language">Adding a new language<a class="headerlink" href="#adding-a-new-language" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Take the next available 10-port block after the last allocated
+   language (currently Rust: MQ 11454–11463, REST 19483–19492)</li>
+<li>The next block starts at MQ <code>11464</code> / REST <code>19493</code></li>
+<li>Add the allocation to the table above</li>
+<li>Update your CI workflow to use the allocated ports</li>
+<li>Update wrapper scripts with the correct <code>COMPOSE_PROJECT_NAME</code></li>
+</ol>
 
 
 

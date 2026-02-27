@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://wphillipmoore.github.io/mq-rest-admin-dev-environment/dev/configuration/docker-compose/">
+        <link rel="canonical" href="https://wphillipmoore.github.io/mq-rest-admin-dev-environment/dev/setup/new-repo/">
       
       
-        <link rel="prev" href="../../getting-started/">
+        <link rel="prev" href="../../architecture/cross-qm-routing/">
       
       
-        <link rel="next" href="../seed-data/">
+        <link rel="next" href="../../ci-integration/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Docker Compose - mq-rest-admin-dev-environment</title>
+        <title>New Repository Onboarding - mq-rest-admin-dev-environment</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#docker-compose" class="md-skip">
+        <a href="#new-repository-onboarding" class="md-skip">
           Skip to content
         </a>
       
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Docker Compose
+              New Repository Onboarding
             
           </span>
         </div>
@@ -265,13 +265,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../configuration/docker-compose/" class="md-tabs__link">
           
   
   
@@ -307,11 +305,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../setup/new-repo/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   
@@ -503,31 +503,26 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   
@@ -545,7 +540,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -560,37 +555,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Docker Compose
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../configuration/docker-compose/" class="md-nav__link">
         
   
   
@@ -606,109 +574,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#services" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Services
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Services">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#qm1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        QM1
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#qm2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        QM2
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#environment-variables" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Environment variables
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#volumes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Volumes
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#health-checks" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Health checks
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#network" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Network
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -721,7 +586,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../seed-data/" class="md-nav__link">
+      <a href="../../configuration/seed-data/" class="md-nav__link">
         
   
   
@@ -749,7 +614,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../rest-api-users/" class="md-nav__link">
+      <a href="../../configuration/rest-api-users/" class="md-nav__link">
         
   
   
@@ -896,26 +761,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
             
   
   
@@ -933,7 +803,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -948,10 +818,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../setup/new-repo/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    New Repository Onboarding
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -967,6 +864,103 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-create-wrapper-scripts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Create wrapper scripts
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-choose-a-compose_project_name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Choose a COMPOSE_PROJECT_NAME
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-allocate-ports" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Allocate ports
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-set-up-ci" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Set up CI
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-implement-the-integration-test-gate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Implement the integration test gate
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-add-lifecycle-fixture-for-ci" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Add lifecycle fixture for CI
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checklist
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1202,49 +1196,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#services" class="md-nav__link">
+  <a href="#1-create-wrapper-scripts" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Services
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Services">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#qm1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        QM1
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#qm2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        QM2
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#environment-variables" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Environment variables
+        1. Create wrapper scripts
       
     </span>
   </a>
@@ -1252,10 +1207,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#volumes" class="md-nav__link">
+  <a href="#2-choose-a-compose_project_name" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Volumes
+        2. Choose a COMPOSE_PROJECT_NAME
       
     </span>
   </a>
@@ -1263,10 +1218,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#health-checks" class="md-nav__link">
+  <a href="#3-allocate-ports" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Health checks
+        3. Allocate ports
       
     </span>
   </a>
@@ -1274,10 +1229,43 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#network" class="md-nav__link">
+  <a href="#4-set-up-ci" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Network
+        4. Set up CI
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-implement-the-integration-test-gate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Implement the integration test gate
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-add-lifecycle-fixture-for-ci" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Add lifecycle fixture for CI
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checklist
       
     </span>
   </a>
@@ -1301,133 +1289,131 @@
 
 
 
-<h1 id="docker-compose">Docker Compose<a class="headerlink" href="#docker-compose" title="Permanent link">&para;</a></h1>
-<p>The Docker Compose configuration is located at <code>config/docker-compose.yml</code>
-and defines two IBM MQ container services with REST API access.</p>
-<h2 id="services">Services<a class="headerlink" href="#services" title="Permanent link">&para;</a></h2>
-<h3 id="qm1">QM1<a class="headerlink" href="#qm1" title="Permanent link">&para;</a></h3>
-<table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Image</td>
-<td><code>icr.io/ibm-messaging/mq:latest</code></td>
-</tr>
-<tr>
-<td>Hostname</td>
-<td><code>qm1</code></td>
-</tr>
-<tr>
-<td>MQ listener port</td>
-<td><code>1414</code> (host: <code>1414</code>)</td>
-</tr>
-<tr>
-<td>REST API port</td>
-<td><code>9443</code> (host: <code>9443</code>)</td>
-</tr>
-<tr>
-<td>Queue manager name</td>
-<td><code>QM1</code></td>
-</tr>
-</tbody>
-</table>
-<h3 id="qm2">QM2<a class="headerlink" href="#qm2" title="Permanent link">&para;</a></h3>
-<table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Image</td>
-<td><code>icr.io/ibm-messaging/mq:latest</code></td>
-</tr>
-<tr>
-<td>Hostname</td>
-<td><code>qm2</code></td>
-</tr>
-<tr>
-<td>MQ listener port</td>
-<td><code>1414</code> (host: <code>1415</code>)</td>
-</tr>
-<tr>
-<td>REST API port</td>
-<td><code>9443</code> (host: <code>9444</code>)</td>
-</tr>
-<tr>
-<td>Queue manager name</td>
-<td><code>QM2</code></td>
-</tr>
-</tbody>
-</table>
-<h2 id="environment-variables">Environment variables<a class="headerlink" href="#environment-variables" title="Permanent link">&para;</a></h2>
-<p>Both services accept the same environment variables for port
-overrides:</p>
-<table>
-<thead>
-<tr>
-<th>Variable</th>
-<th>Default</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>MQ_IMAGE</code></td>
-<td><code>icr.io/ibm-messaging/mq:latest</code></td>
-<td>Container image</td>
-</tr>
-<tr>
-<td><code>QM1_MQ_PORT</code></td>
-<td><code>1414</code></td>
-<td>Host port for QM1 MQ listener</td>
-</tr>
-<tr>
-<td><code>QM1_REST_PORT</code></td>
-<td><code>9443</code></td>
-<td>Host port for QM1 REST API</td>
-</tr>
-<tr>
-<td><code>QM2_MQ_PORT</code></td>
-<td><code>1415</code></td>
-<td>Host port for QM2 MQ listener</td>
-</tr>
-<tr>
-<td><code>QM2_REST_PORT</code></td>
-<td><code>9444</code></td>
-<td>Host port for QM2 REST API</td>
-</tr>
-</tbody>
-</table>
-<h2 id="volumes">Volumes<a class="headerlink" href="#volumes" title="Permanent link">&para;</a></h2>
-<p>Each queue manager has a dedicated named volume for persistent data:</p>
-<ul>
-<li><code>qm1data</code> — mounted at <code>/var/mqm</code> in the QM1 container</li>
-<li><code>qm2data</code> — mounted at <code>/var/mqm</code> in the QM2 container</li>
-</ul>
-<p>The <code>mqwebuser.xml</code> configuration file is bind-mounted read-only
-into both containers at the Liberty web server configuration path.</p>
-<h2 id="health-checks">Health checks<a class="headerlink" href="#health-checks" title="Permanent link">&para;</a></h2>
-<p>Both containers use the <code>dspmq</code> command as a health check:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">healthcheck</span><span class="p">:</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">test</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;CMD&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;dspmq&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;-m&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;QM1&quot;</span><span class="p p-Indicator">]</span><span class="w">  </span><span class="c1"># or QM2</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nt">interval</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10s</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nt">timeout</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5s</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span><span class="nt">retries</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">12</span>
+<h1 id="new-repository-onboarding">New Repository Onboarding<a class="headerlink" href="#new-repository-onboarding" title="Permanent link">&para;</a></h1>
+<p>How to add a new language library to the mq-rest-admin project family
+with full MQ dev environment integration.</p>
+<h2 id="1-create-wrapper-scripts">1. Create wrapper scripts<a class="headerlink" href="#1-create-wrapper-scripts" title="Permanent link">&para;</a></h2>
+<p>Each consuming repo delegates MQ lifecycle operations to this repository
+through thin wrapper scripts in <code>scripts/dev/</code>. Create one for each
+lifecycle operation: <code>mq_start.sh</code>, <code>mq_stop.sh</code>, <code>mq_seed.sh</code>,
+<code>mq_verify.sh</code>, <code>mq_reset.sh</code>.</p>
+<p>Every wrapper follows the same pattern:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="ch">#!/usr/bin/env bash</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">set</span><span class="w"> </span>-euo<span class="w"> </span>pipefail
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="nv">repo_root</span><span class="o">=</span><span class="s2">&quot;</span><span class="k">$(</span><span class="nb">cd</span><span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>dirname<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$0</span><span class="s2">&quot;</span><span class="k">)</span><span class="s2">/../..&quot;</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">pwd</span><span class="k">)</span><span class="s2">&quot;</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="nv">mq_dev_env</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">MQ_DEV_ENV_PATH</span><span class="k">:-</span><span class="si">${</span><span class="nv">repo_root</span><span class="si">}</span><span class="p">/../mq-rest-admin-dev-environment</span><span class="si">}</span><span class="s2">&quot;</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span>!<span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$mq_dev_env</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">  </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;mq-rest-admin-dev-environment not found at: </span><span class="nv">$mq_dev_env</span><span class="s2">&quot;</span><span class="w"> </span>&gt;<span class="p">&amp;</span><span class="m">2</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">  </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Clone it as a sibling directory or set MQ_DEV_ENV_PATH.&quot;</span><span class="w"> </span>&gt;<span class="p">&amp;</span><span class="m">2</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">  </span><span class="nb">exit</span><span class="w"> </span><span class="m">1</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="k">fi</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="nb">export</span><span class="w"> </span><span class="nv">COMPOSE_PROJECT_NAME</span><span class="o">=</span>mqrest-&lt;language&gt;
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="nb">cd</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$mq_dev_env</span><span class="s2">&quot;</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="nb">exec</span><span class="w"> </span>scripts/mq_start.sh
 </code></pre></div>
-<p>The <code>mq_start.sh</code> script waits for both containers to report
-healthy before returning.</p>
-<h2 id="network">Network<a class="headerlink" href="#network" title="Permanent link">&para;</a></h2>
-<p>Both services share the <code>mq-dev-net</code> Docker network, which allows
-the containers to communicate using their hostnames (<code>qm1</code>, <code>qm2</code>).
-This is required for the cross-QM sender/receiver channels.</p>
+<p>Replace <code>mq_start.sh</code> on the last line with the appropriate script name
+for each wrapper (<code>mq_stop.sh</code>, <code>mq_seed.sh</code>, etc.).</p>
+<h2 id="2-choose-a-compose_project_name">2. Choose a <code>COMPOSE_PROJECT_NAME</code><a class="headerlink" href="#2-choose-a-compose_project_name" title="Permanent link">&para;</a></h2>
+<p>Each language library uses a unique <code>COMPOSE_PROJECT_NAME</code> to isolate
+its Docker Compose resources. The naming convention is:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>mqrest-&lt;language&gt;
+</code></pre></div>
+<p>Existing names:</p>
+<table>
+<thead>
+<tr>
+<th>Language</th>
+<th>COMPOSE_PROJECT_NAME</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Python</td>
+<td><code>mqrest-python</code></td>
+</tr>
+<tr>
+<td>Java</td>
+<td><code>mqrest-java</code></td>
+</tr>
+<tr>
+<td>Go</td>
+<td><code>mqrest-go</code></td>
+</tr>
+<tr>
+<td>Ruby</td>
+<td><code>mqrest-ruby</code></td>
+</tr>
+<tr>
+<td>Rust</td>
+<td><code>mqrest-rust</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="3-allocate-ports">3. Allocate ports<a class="headerlink" href="#3-allocate-ports" title="Permanent link">&para;</a></h2>
+<p>Each language is assigned a dedicated block of ports to avoid conflicts
+when environments run concurrently. See the
+<a href="../../reference/port-allocation/">Port Allocation</a> reference for the
+full scheme and instructions on claiming the next available block.</p>
+<h2 id="4-set-up-ci">4. Set up CI<a class="headerlink" href="#4-set-up-ci" title="Permanent link">&para;</a></h2>
+<p>Add the composite action to your GitHub Actions workflow. The action
+handles starting, seeding, and verifying the MQ environment:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Checkout MQ dev environment</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/checkout@v4</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span><span class="nt">with</span><span class="p">:</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span><span class="nt">repository</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">wphillipmoore/mq-rest-admin-dev-environment</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">    </span><span class="nt">ref</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">main</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">.mq-dev-env</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Setup MQ</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">  </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mq</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">  </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./.mq-dev-env/.github/actions/setup-mq</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">  </span><span class="nt">with</span><span class="p">:</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">    </span><span class="nt">project-name</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;mqrest-&lt;language&gt;&#39;</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">    </span><span class="nt">qm1-rest-port</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;&lt;allocated-rest-port&gt;&#39;</span>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">    </span><span class="nt">qm2-rest-port</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;&lt;allocated-rest-port</span><span class="nv"> </span><span class="s">+</span><span class="nv"> </span><span class="s">1&gt;&#39;</span>
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">    </span><span class="nt">qm1-mq-port</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;&lt;allocated-mq-port&gt;&#39;</span>
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">    </span><span class="nt">qm2-mq-port</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;&lt;allocated-mq-port</span><span class="nv"> </span><span class="s">+</span><span class="nv"> </span><span class="s">1&gt;&#39;</span>
+</code></pre></div>
+<p>Use the ports from your allocated block. For matrix builds, apply the
+CI offset formula described in
+<a href="../../reference/port-allocation/#ci-port-isolation">Port Allocation — CI port isolation</a>.</p>
+<p>See <a href="../../ci-integration/">CI Integration</a> for complete input/output
+reference.</p>
+<h2 id="5-implement-the-integration-test-gate">5. Implement the integration test gate<a class="headerlink" href="#5-implement-the-integration-test-gate" title="Permanent link">&para;</a></h2>
+<p>Integration tests should only run when the MQ environment is available.
+Use an environment variable to gate execution:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>MQ_REST_ADMIN_RUN_INTEGRATION=true
+</code></pre></div>
+<p>In your test suite, skip integration tests unless this variable is set.
+Your CI workflow should set it:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nt">env</span><span class="p">:</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span><span class="nt">MQ_REST_ADMIN_RUN_INTEGRATION</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;true&#39;</span>
+</code></pre></div>
+<p>Locally, developers opt in by exporting it before running tests.</p>
+<h2 id="6-add-lifecycle-fixture-for-ci">6. Add lifecycle fixture for CI<a class="headerlink" href="#6-add-lifecycle-fixture-for-ci" title="Permanent link">&para;</a></h2>
+<p>In CI, the composite action handles startup and teardown. Your test
+suite should skip its own lifecycle management when running under CI.
+Use the <code>MQ_SKIP_LIFECYCLE</code> variable:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>MQ_SKIP_LIFECYCLE=true
+</code></pre></div>
+<p>When set, test fixtures should not call <code>mq_start.sh</code> or <code>mq_stop.sh</code>
+— the action has already done this. Locally (when the variable is
+unset), fixtures manage the full lifecycle.</p>
+<h2 id="checklist">Checklist<a class="headerlink" href="#checklist" title="Permanent link">&para;</a></h2>
+<ul>
+<li>[ ] Created <code>scripts/dev/mq_*.sh</code> wrapper scripts</li>
+<li>[ ] Chose a unique <code>COMPOSE_PROJECT_NAME</code> (<code>mqrest-&lt;language&gt;</code>)</li>
+<li>[ ] Allocated ports from the port scheme</li>
+<li>[ ] Added the <code>setup-mq</code> composite action to CI workflow</li>
+<li>[ ] Set <code>MQ_REST_ADMIN_RUN_INTEGRATION</code> in CI</li>
+<li>[ ] Implemented <code>MQ_SKIP_LIFECYCLE</code> in test fixtures</li>
+<li>[ ] Tested locally: <code>scripts/dev/mq_start.sh &amp;&amp; scripts/dev/mq_seed.sh</code></li>
+<li>[ ] Tested in CI: pushed a branch and verified the workflow</li>
+</ul>
 
 
 

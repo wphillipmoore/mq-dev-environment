@@ -44,4 +44,16 @@
          <loc>https://wphillipmoore.github.io/mq-rest-admin-dev-environment/dev/configuration/seed-data/</loc>
          <lastmod>2026-02-27</lastmod>
     </url>
+    <url>
+         <loc>https://wphillipmoore.github.io/mq-rest-admin-dev-environment/dev/reference/environment-variables/</loc>
+         <lastmod>2026-02-27</lastmod>
+    </url>
+    <url>
+         <loc>https://wphillipmoore.github.io/mq-rest-admin-dev-environment/dev/reference/port-allocation/</loc>
+         <lastmod>2026-02-27</lastmod>
+    </url>
+    <url>
+         <loc>https://wphillipmoore.github.io/mq-rest-admin-dev-environment/dev/setup/new-repo/</loc>
+         <lastmod>2026-02-27</lastmod>
+    </url>
 </urlset>
